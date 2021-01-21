@@ -1,0 +1,21 @@
+
+  body{
+    background: #000;
+  }
+  .logo{
+    margin: 12px 80px;
+  display: flex;
+  position: absolute;
+  left: 0px;
+  }
+  .first-menu{
+    color: white;
+      display: flex;
+    position: absolute;
+    left: 500px;
+border: 2px solid green;
+  }
+  .fsec{
+    border: 2px solid red;
+
+  }
