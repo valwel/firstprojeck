@@ -1,21 +1,98 @@
-
-  body{
+body {
     background: #000;
-  }
-  .logo{
-    margin: 12px 80px;
-  display: flex;
-  position: absolute;
-  left: 0px;
-  }
-  .first-menu{
-    color: white;
-      display: flex;
-    position: absolute;
-    left: 500px;
-border: 2px solid green;
-  }
-  .fsec{
-    border: 2px solid red;
+}
 
-  }
+.header__logo {
+    margin: 12px 80px;
+    display: flex;
+    border: 2px solid blue;
+}
+
+.header__nav-block {
+    color: white;
+    display: flex;
+    border: 2px solid green;
+}
+
+.header {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__nav-link {
+    padding: 30px 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity .3s;
+    position: relative;
+}
+
+.header__nav-link:hover {
+    opacity: .7;
+}
+
+.header__nav-item {
+    display: flex;
+}
+
+.header__nav-item:nth-child(n+2) {
+    margin-left: 20px;
+    position: relative;
+}
+
+.header__nav-item:nth-child(n+2)>.header__nav-link::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -14px;
+    margin-top: -3px;
+}
+
+.header__but {
+    display: flex;
+    border: 2px solid #000;
+    background-color: orangered;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 12%;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity .3s;
+    position: relative;
+}
+
+.section {
+    border: 2px solid yellowgreen;
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.section__burger {
+    margin: 12px 80px;
+    display: flex;
+    border: 2px solid blue;
+}
+
+.section__text {
+    margin: 12px 80px;
+    border: 2px solid blue;
+}
